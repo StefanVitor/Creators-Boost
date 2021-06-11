@@ -134,7 +134,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/StefanVitor/CreatorsBoost.git
+   git clone https://github.com/StefanVitor/Creators-Boost.git
    ```
 2. Create project on Firebase and import serviceAccountKey.json on 'functions' directory
 
