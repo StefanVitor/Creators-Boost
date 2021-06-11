@@ -8,7 +8,7 @@
   <p align="center">
     Creators Boost is patreon-like platform where people can create tiers of NFTs that their followers can purchase and get access to exclusive content, one on one chats, access to a private group etc. based on the number as well as type of NFTs. The access to these tiers can last for a week, month or lifetime. Creators Boost also has tier market, where people who owns some tier can sold that tier, and also tier creators could be paid when someone resell their tier.
     <br />
-  <a href="https://www.youtube.com/watch?v=eGvdrB52n2o"><strong>Application Demo</strong></a>
+  <a href="https://www.youtube.com/watch?v=YZkqU-yCZwE"><strong>Application Demo</strong></a>
     <br />
   </p>
 </p>
