@@ -47,16 +47,17 @@
 * Login - login is very simple form, where users put their mail, and on mail arrives link for authorization
 
 ![login](https://user-images.githubusercontent.com/25621259/121596342-9a92e280-ca3f-11eb-9e89-bc4d2a61f38e.png)
-![login_1](https://user-images.githubusercontent.com/25621259/121596501-c31adc80-ca3f-11eb-9041-a17320ef835c.png)
+![login_1](https://user-images.githubusercontent.com/25621259/121675703-0adb4b80-cab4-11eb-9f4a-393ae610d43c.png)
 
 
-* Home page - page where users could see posts from subscribed tiers or their own tiers(projects)
+
+* Home page - page where users could see posts from subscribed tiers(has token for that tiers) or their own tiers(projects)
 
 ![home_page](https://user-images.githubusercontent.com/25621259/121597442-0590e900-ca41-11eb-96a5-04bedec960a6.png)
 
 
 
-* My projects - in Creators Boost, one user could have one or more projects. For every project, user could create unlimited tiers number
+* My projects - in Creators Boost, one user could have unlimited projects. For every project, user could create unlimited tiers number
 
 ![my_projects](https://user-images.githubusercontent.com/25621259/121597875-7d5f1380-ca41-11eb-9b1b-fb55ba98175d.png)
 
@@ -65,6 +66,7 @@
 * Owner project detail - on this page, project owner could create new tiers or new posts (display)
 
 ![project_detail_creator](https://user-images.githubusercontent.com/25621259/121599297-222e2080-ca43-11eb-9977-7e3fc82df43f.png)
+
 
 
 * Owner project detail - on this page, project owner could create new tiers or new posts (create new tier)
@@ -80,6 +82,8 @@
 
 ![project_detail_new_tier](https://user-images.githubusercontent.com/25621259/121601031-aed9de00-ca45-11eb-8818-37a063e37987.png)
 
+
+
 * Owner project detail - on this page, project owner could create new tiers or new posts - create new post 
 
   Fields 
@@ -90,25 +94,31 @@
 ![project_detail_new_post](https://user-images.githubusercontent.com/25621259/121601347-1e4fcd80-ca46-11eb-94bc-c02b4399d91d.png)
 
 
+
 * Non owner (others) project detail - on this page, users could see project tiers and posts(if they possess some tiers) for that project. In picture bellow, for every tier, you could see diferent button.
 
   - Button "Buy" - user doesn't possess that tier, and when click on "Buy", user could buy that tier
-  - Button "Sell" - user possess that tier, and when click on "Sell", it opens dialog where user put sell price, and that tier (token) will be display on tier market  
-  - Button "Cancel sell" - that tier(token) is on market, and when user click on "Cancel sell", that token pull from market
-  - Button "Burn" - this button is unlocked when token expired. When user "burn" token, user could buy new one
+  - Button "Sell" - user possess token for that tier, and when click on "Sell", it opens dialog where user put sell price, and that token(tier) will be display on tier market  
+  - Button "Cancel sell" - token for that tier is on market, and when user click on "Cancel sell", that token pulls from market
+  - Button "Burn" - this button is unlocked when token expired. When user "burn" token, token will be burn and user could buy new one
   
 ![project_detail_non_creator](https://user-images.githubusercontent.com/25621259/121603228-b9e23d80-ca48-11eb-9d20-0e3dc16f61df.png)
 ![project_detail_non_creator_sell](https://user-images.githubusercontent.com/25621259/121603232-bb136a80-ca48-11eb-9ae7-44cb4d94c4db.png)
 
 
+
 * Tier market - when radio button is "For sell (my tiers)", users can see their own tiers(tokens) for sell, and when is "For buy" users can see tiers(tokens) that other users want to sell. In example bellow, sell price for token "Superb tier" is 150 ZIL, where 10 ZIL went to project(tier) owner and another 140 ZIL went to token owner.
 
 ![tier_market](https://user-images.githubusercontent.com/25621259/121606601-bfdb1d00-ca4e-11eb-9947-0690bbfc7589.png)
+![tier_market_sell](https://user-images.githubusercontent.com/25621259/121678851-fe58f200-cab7-11eb-835a-0550a0749a24.png)
 
 
-* Subscribed tiers - tiers that user subscribed
+
+* Subscribed tiers - tiers that user subscribed (user has token for that tiers)
 
 ![subscribed_tiers](https://user-images.githubusercontent.com/25621259/121606879-41cb4600-ca4f-11eb-891e-f6f23e896de9.png)
+
+
 
 ### Built With
 
@@ -117,7 +127,7 @@ This project has five main components
 * [Magic](https://magic.link/)
 * [Zilliqa-JS](https://github.com/Zilliqa/Zilliqa-JavaScript-Library)
 * [Firebase](https://firebase.google.com/)
-* [Zilliqa Blockchain](https://www.zilliqa.com/platform)
+* [Zilliqa Blockchain](https://www.zilliqa.com/)
 
 More detail description how it works: 
 * On frontend there is ReactJS with [Material-UI](https://material-ui.com/) compoments. When user click on login page, login token with firebase function automatic writes on database and user has authorization to write on database (and to work in app). 
@@ -138,12 +148,17 @@ To get a local copy up and running follow these simple example steps.
    ```
 2. Create project on Firebase and import serviceAccountKey.json on 'functions' directory (on request, I'll send my current serviceAccountKey.json)
 
-
+3. Start project
+     ```sh
+   npm start
+   ```
 
 <!-- ROADMAP -->
 ## Roadmap
 
 * Development new functionalities and integration with other wallets
+
+* Integration with Discord and Discourse
 
 * Application design
 
@@ -181,6 +196,6 @@ Project Link: [https://github.com/StefanVitor/Creators-Boost](https://github.com
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [Gitcoin](https://gitcoin.co/)
-* [Zilliqa team](https://www.zilliqa.com/platform)
+* [Zilliqa team](https://www.zilliqa.com/)
 
 
