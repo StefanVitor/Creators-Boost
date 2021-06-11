@@ -136,19 +136,18 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    git clone https://github.com/StefanVitor/CreatorsBoost.git
    ```
-2. Create project on Firebase and import google-services.json on app directory
+2. Create project on Firebase and import serviceAccountKey.json on 'functions' directory
 
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-* Development new functionalities
+* Development new functionalities and integration with other wallets
 
 * Application design
 
 * Test cases
-
 
 
 
