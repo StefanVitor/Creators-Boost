@@ -47,7 +47,8 @@
 * Login - login is very simple form, where users put their mail, and on mail arrives link for authorization
 
 ![login](https://user-images.githubusercontent.com/25621259/121596342-9a92e280-ca3f-11eb-9e89-bc4d2a61f38e.png)
-![login_1](https://user-images.githubusercontent.com/25621259/121596501-c31adc80-ca3f-11eb-9041-a17320ef835c.png)
+![login_2](https://user-images.githubusercontent.com/25621259/121675400-a3bd9700-cab3-11eb-9acc-e494e9828395.png)
+
 
 
 * Home page - page where users could see posts from subscribed tiers or their own tiers(projects)
@@ -67,6 +68,7 @@
 ![project_detail_creator](https://user-images.githubusercontent.com/25621259/121599297-222e2080-ca43-11eb-9977-7e3fc82df43f.png)
 
 
+
 * Owner project detail - on this page, project owner could create new tiers or new posts (create new tier)
 
   Fields 
@@ -80,6 +82,8 @@
 
 ![project_detail_new_tier](https://user-images.githubusercontent.com/25621259/121601031-aed9de00-ca45-11eb-8818-37a063e37987.png)
 
+
+
 * Owner project detail - on this page, project owner could create new tiers or new posts - create new post 
 
   Fields 
@@ -88,6 +92,7 @@
   - Check tiers that could see this post
 
 ![project_detail_new_post](https://user-images.githubusercontent.com/25621259/121601347-1e4fcd80-ca46-11eb-94bc-c02b4399d91d.png)
+
 
 
 * Non owner (others) project detail - on this page, users could see project tiers and posts(if they possess some tiers) for that project. In picture bellow, for every tier, you could see diferent button.
@@ -101,14 +106,18 @@
 ![project_detail_non_creator_sell](https://user-images.githubusercontent.com/25621259/121603232-bb136a80-ca48-11eb-9ae7-44cb4d94c4db.png)
 
 
+
 * Tier market - when radio button is "For sell (my tiers)", users can see their own tiers(tokens) for sell, and when is "For buy" users can see tiers(tokens) that other users want to sell. In example bellow, sell price for token "Superb tier" is 150 ZIL, where 10 ZIL went to project(tier) owner and another 140 ZIL went to token owner.
 
 ![tier_market](https://user-images.githubusercontent.com/25621259/121606601-bfdb1d00-ca4e-11eb-9947-0690bbfc7589.png)
 
 
+
 * Subscribed tiers - tiers that user subscribed
 
 ![subscribed_tiers](https://user-images.githubusercontent.com/25621259/121606879-41cb4600-ca4f-11eb-891e-f6f23e896de9.png)
+
+
 
 ### Built With
 
