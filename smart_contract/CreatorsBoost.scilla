@@ -4,7 +4,7 @@ scilla_version 0
 (*               Associated library                *)
 (***************************************************)
 import BoolUtils PairUtils ListUtils IntUtils
-library NFTPatreon
+library CreatorsBoost
 
 (* User-defined ADTs *)
 type Dummy =
@@ -112,7 +112,7 @@ let make_error =
 (*             The contract definition             *)
 (***************************************************)
 
-contract NFTPatreon
+contract CreatorsBoost
 (
   contract_owner: ByStr20,
   name : String,
