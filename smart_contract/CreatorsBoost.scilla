@@ -830,30 +830,37 @@ transition SellToken(token_id: Uint256)
 
         delete tokens_sell_price[token_id];
 
-        e = {_eventname: "SellTokenSuccess"; from: _sender; recipient: token_owner; token_id: token_id};
-        event e;
-
+        (* Check if token has that tier *)
         has_tier_id <- tokens_tier_id[token_id];
         match has_tier_id with
         | Some tier_id =>
+          (* Check if tier has resell type *)
           has_resell_type <- tier_ids_resell_type[tier_id];
           match has_resell_type with
           | Some resell_type =>
+            (* Check if tier has resell value *)
             has_resell_value <- tier_ids_resell_value[tier_id];
             match has_resell_value with 
             | Some resell_value =>
+              (* Check if resell value is zero (no fee for project owner)*)
               resell_value_equal_zero = builtin eq resell_value zero_uint128;
               match resell_value_equal_zero with
               | False =>
+                (* Check if is resell type percent *)
                 resell_type_temp = builtin eq resell_type one_uint_32;
                 match resell_type_temp with
                 | True =>
+                  (* Calculate amounts for project owner and token owner - calculation for percent resell type *)
                   amount_for_project_owner_temp = builtin mul token_sell_price resell_value;
                   amount_for_project_owner = builtin div amount_for_project_owner_temp one_hundred_uint128;
                   amount_for_token_seller = builtin sub token_sell_price amount_for_project_owner;
 
+                  e = {_eventname: "SellTokenSuccess"; from: _sender; recipient: token_owner; token_id: token_id};
+                  event e;
+
                   accept;
                   
+                  (* send amoun*)
                   msg_to_tier_owner = { _tag : "SellTokenTierOwner"; _recipient : project_owner; _amount : amount_for_project_owner; 
                                       token_id : token_id };
                   msg_to_recipient = { _tag : "SellTokenRecipient"; _recipient : token_owner; _amount : amount_for_token_seller; 
@@ -863,8 +870,12 @@ transition SellToken(token_id: Uint256)
                   msgs = three_msgs msg_to_tier_owner msg_to_recipient msg_to_sender;
                   send msgs
                 | False =>
+                  (* Calculate amounts for project owner and token owner - calculation for value resell type *)
                   amount_for_project_owner = builtin sub token_sell_price resell_value;
                   amount_for_token_seller = builtin sub token_sell_price amount_for_project_owner;
+
+                  e = {_eventname: "SellTokenSuccess"; from: _sender; recipient: token_owner; token_id: token_id};
+                  event e;
 
                   accept;
                   
@@ -878,6 +889,10 @@ transition SellToken(token_id: Uint256)
                   send msgs
                 end
               | True =>
+                
+                e = {_eventname: "SellTokenSuccess"; from: _sender; recipient: token_owner; token_id: token_id};
+                event e;
+
                 accept;
                 msg_to_recipient = { _tag : "SellTokenRecipient"; _recipient : token_owner; _amount : token_sell_price; 
                                   token_id : token_id };
