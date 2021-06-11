@@ -110,6 +110,7 @@
 * Tier market - when radio button is "For sell (my tiers)", users can see their own tiers(tokens) for sell, and when is "For buy" users can see tiers(tokens) that other users want to sell. In example bellow, sell price for token "Superb tier" is 150 ZIL, where 10 ZIL went to project(tier) owner and another 140 ZIL went to token owner.
 
 ![tier_market](https://user-images.githubusercontent.com/25621259/121606601-bfdb1d00-ca4e-11eb-9947-0690bbfc7589.png)
+![tier_market_sell](https://user-images.githubusercontent.com/25621259/121678851-fe58f200-cab7-11eb-835a-0550a0749a24.png)
 
 
 
