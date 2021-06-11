@@ -56,7 +56,7 @@
 
 
 
-* My projects - in Creators Boost, one user could have one or more projects. For every project, user could create unlimited tiers number
+* My projects - in Creators Boost, one user could have unlimited projects. For every project, user could create unlimited tiers number
 
 ![my_projects](https://user-images.githubusercontent.com/25621259/121597875-7d5f1380-ca41-11eb-9b1b-fb55ba98175d.png)
 
