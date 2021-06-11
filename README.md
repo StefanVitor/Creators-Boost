@@ -147,12 +147,17 @@ To get a local copy up and running follow these simple example steps.
    ```
 2. Create project on Firebase and import serviceAccountKey.json on 'functions' directory (on request, I'll send my current serviceAccountKey.json)
 
-
+3. Start project
+     ```sh
+   npm start
+   ```
 
 <!-- ROADMAP -->
 ## Roadmap
 
 * Development new functionalities and integration with other wallets
+
+* Integration with Discord and Discourse
 
 * Application design
 
