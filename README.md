@@ -51,7 +51,7 @@
 
 
 
-* Home page - page where users could see posts from subscribed tiers or their own tiers(projects)
+* Home page - page where users could see posts from subscribed tiers(has token for that tiers) or their own tiers(projects)
 
 ![home_page](https://user-images.githubusercontent.com/25621259/121597442-0590e900-ca41-11eb-96a5-04bedec960a6.png)
 
@@ -114,7 +114,7 @@
 
 
 
-* Subscribed tiers - tiers that user subscribed
+* Subscribed tiers - tiers that user subscribed (user has token for that tiers)
 
 ![subscribed_tiers](https://user-images.githubusercontent.com/25621259/121606879-41cb4600-ca4f-11eb-891e-f6f23e896de9.png)
 
