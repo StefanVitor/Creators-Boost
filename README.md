@@ -126,7 +126,7 @@ This project has five main components
 * [Magic](https://magic.link/)
 * [Zilliqa-JS](https://github.com/Zilliqa/Zilliqa-JavaScript-Library)
 * [Firebase](https://firebase.google.com/)
-* [Zilliqa Blockchain](https://www.zilliqa.com/platform)
+* [Zilliqa Blockchain](https://www.zilliqa.com/)
 
 More detail description how it works: 
 * On frontend there is ReactJS with [Material-UI](https://material-ui.com/) compoments. When user click on login page, login token with firebase function automatic writes on database and user has authorization to write on database (and to work in app). 
@@ -195,6 +195,6 @@ Project Link: [https://github.com/StefanVitor/Creators-Boost](https://github.com
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [Gitcoin](https://gitcoin.co/)
-* [Zilliqa team](https://www.zilliqa.com/platform)
+* [Zilliqa team](https://www.zilliqa.com/)
 
 
