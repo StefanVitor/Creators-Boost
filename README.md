@@ -143,7 +143,7 @@ To get a local copy up and running follow these simple example steps.
 <!-- ROADMAP -->
 ## Roadmap
 
-* Development of new functionalities
+* Development new functionalities
 
 * Application design
 
