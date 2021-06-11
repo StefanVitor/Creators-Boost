@@ -98,9 +98,9 @@
 * Non owner (others) project detail - on this page, users could see project tiers and posts(if they possess some tiers) for that project. In picture bellow, for every tier, you could see diferent button.
 
   - Button "Buy" - user doesn't possess that tier, and when click on "Buy", user could buy that tier
-  - Button "Sell" - user possess that tier, and when click on "Sell", it opens dialog where user put sell price, and that tier (token) will be display on tier market  
-  - Button "Cancel sell" - that tier(token) is on market, and when user click on "Cancel sell", that token pull from market
-  - Button "Burn" - this button is unlocked when token expired. When user "burn" token, user could buy new one
+  - Button "Sell" - user possess token for that tier, and when click on "Sell", it opens dialog where user put sell price, and that token(tier) will be display on tier market  
+  - Button "Cancel sell" - token for that tier is on market, and when user click on "Cancel sell", that token pulls from market
+  - Button "Burn" - this button is unlocked when token expired. When user "burn" token, token will be burn and user could buy new one
   
 ![project_detail_non_creator](https://user-images.githubusercontent.com/25621259/121603228-b9e23d80-ca48-11eb-9d20-0e3dc16f61df.png)
 ![project_detail_non_creator_sell](https://user-images.githubusercontent.com/25621259/121603232-bb136a80-ca48-11eb-9ae7-44cb4d94c4db.png)
