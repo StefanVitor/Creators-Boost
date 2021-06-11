@@ -47,7 +47,7 @@
 * Login - login is very simple form, where users put their mail, and on mail arrives link for authorization
 
 ![login](https://user-images.githubusercontent.com/25621259/121596342-9a92e280-ca3f-11eb-9e89-bc4d2a61f38e.png)
-![login_2](https://user-images.githubusercontent.com/25621259/121675400-a3bd9700-cab3-11eb-9acc-e494e9828395.png)
+![login_1](https://user-images.githubusercontent.com/25621259/121675703-0adb4b80-cab4-11eb-9f4a-393ae610d43c.png)
 
 
 
